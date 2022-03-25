@@ -1,0 +1,151 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="{% static 'fb.css' %}">
+   <title>Facebook</title>
+  </head>
+  <body>
+   <div class="container-fluid">
+    <nav class="navi">
+       <div class="row">
+           <div class="col-md-7" >
+                 <h1 class="colo" >facebook</h1>
+            </div>
+                  <div class="col-md-5">
+                  <form action="">
+                      <table>
+                          <tr> 
+                              <td><label class="label">Email or phone</td>
+                                <td><label class="label">Password</td>
+
+                          </tr>
+                          <tr><td><input type="text"></td>
+                          <td><input type="text"></td>
+                          <td><input class="btn" type="submit"></td></tr>
+                      <tr></tr>
+                      
+                      <td><label class="label">Forgotten Password?</label></td>
+                      </table>
+                  </form> 
+                </div>
+           </div>
+        </nav>
+       </div>
+       <section class="page">
+<div class="row">
+    <div class="col-md-6">
+      <h2>Facebook connects and share with the<br> people in your life</h2>
+      
+        <img src="{% static 'images/fb.png' %}" alt="" srcset="">
+    </div>
+    <div class="col-md-5" style="margin-left: 80px;">
+               <h2>Creat an account</h2>
+                <p style="font-size: 16px;">It's free and always will be</p>
+             <div class="row">
+                     <div class="col-md-6 form-group">
+                           <input type="text" class="form-control">
+                      </div>
+                      <div class="col-md-6 form-group">
+                            <input type="text" class="form-control">
+                      </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <br>
+           <p><b>Birth day</b></p>
+            <div class="row">
+              <div class="col-md-6 ">
+                       
+           <div class="row">
+            <div class="col-md-4">
+                  <select>
+                    <script>
+                      for(i=1;i<=31;i++){
+                     document.write("<option value=" ,"+i+" ,">" +i+ "</option>")
+                    }
+                    </script>
+                    </select>
+            </div>
+            <div class="col-md-4">
+              <select>
+                <script>
+                  arr=["jan","feb","march","april","may","june","july","aug","sep","oct","nov","dec"]
+                  for(i=0;i<=arr.length;i++){
+                 document.write("<option value=" ,"+arr[i]+" ,">" +arr[i]+ "</option>")
+                }
+                </script>
+                    </select>
+            </div>
+            <div class="col-md-4">
+                      <select>
+                        <script>
+                            date=new Date()
+                            year=date.getFullYear()
+                            
+                              for(i=1990;i<=date.getFullYear();i++){
+                             document.write("<option value=" ,"+i+" ,">" +i+ "</option>")
+                            }
+
+                      </script>
+                      </select>
+            </div>
+          </div>
+         </div>
+         <div class="col-md-6 " style="font-size: 15px;">
+           <a href="#">Why do i need to provide my date of birth</a>
+         </div>
+       </div>
+       <div class="row">
+         <div class="col-md-9">
+           <label class="radio-inline ">
+             <input type="radio" >MALE</label>
+             <label class="radio-inline ">
+              <input type="radio" >FEMALE</label>
+         </div>
+       </div>
+        <div class="row">
+          <div class="col-md-8">
+            <a href="#">By clicking creat account,you agree to our terms and confirm that you have read our data policy,
+              including our cookie use policy. You may receive our SMS message notification from Facebook
+               and can opt out any time
+            </a>
+          </div>
+        </div>
+
+    </div>
+
+</div>
+</section>
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  
+</body>
+</html>
